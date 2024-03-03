@@ -1,0 +1,21 @@
+namespace DITCH;
+
+table Accel {
+    temperature: float;
+    x: int16;
+    y: int16;
+    z: int16;
+}
+
+table Pressure {
+    temperature_centi_celsius: int;
+    pressure_pascal: uint;
+}
+
+table Sensors {
+    time: uint;
+    accel: Accel;
+    pressure: [Pressure];
+}
+
+root_type Sensors;

@@ -1,0 +1,18 @@
+namespace DITCH;
+
+table Pod {
+    id: string;
+    level_1: ubyte;
+    level_2: ubyte;
+}
+
+table Puff {
+    time: uint;
+    pod: Pod;
+    duration_1: uint;
+    intensity_1: uint;
+    duration_2: uint;
+    intensity_2: uint;
+}
+
+root_type Puff;

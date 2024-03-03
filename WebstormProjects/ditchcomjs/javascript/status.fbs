@@ -1,0 +1,27 @@
+namespace DITCH;
+
+table Pod {
+    id: string;
+    level_1: ubyte;
+    level_2: ubyte;
+}
+
+table DebugInfos {
+    min_heap: uint;
+    min_flash: uint;
+    uptime: uint;
+}
+
+table Status {
+    id: string;
+    time: uint;
+    firmware_version: string;
+    battery_level: uint;
+    pod: Pod;
+    charging: bool;
+    treatment_id: string;
+    temperature: int;
+    debug_infos: DebugInfos;
+}
+
+root_type Status;
