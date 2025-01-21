@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button id="generateToken">Générer Token</button>
+        <button id="joinConversation">Rejoindre Conversation</button>
+        <input type="text" id="tokenInput" placeholder="Entrez le token ici">
+        <div id="chatroom" style="display:none;">
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Tapez votre message">
+            <button id="sendMessage">Envoyer</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
